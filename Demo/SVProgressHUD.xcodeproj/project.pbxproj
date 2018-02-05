@@ -234,6 +234,9 @@
 			attributes = {
 				LastUpgradeCheck = 0900;
 				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = 4WV38P2X5K;
+					};
 					D36EDBCD1BE7E9B000BD0EF1 = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -347,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 4WV38P2X5K;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SVProgressHUD_Prefix.pch;
@@ -364,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 4WV38P2X5K;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SVProgressHUD_Prefix.pch;

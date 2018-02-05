@@ -1289,7 +1289,8 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         _hudView = [UIView new];
 #endif
         _hudView.layer.masksToBounds = YES;
-        _hudView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
+//        _hudView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
+        _hudView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     }
     if(!_hudView.superview) {
         [self addSubview:_hudView];
