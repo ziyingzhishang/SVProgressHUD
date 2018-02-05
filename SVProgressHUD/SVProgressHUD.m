@@ -709,7 +709,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
     activeHeight -= keyboardHeight;
     
     CGFloat posX = CGRectGetMidX(orientationFrame);
-    CGFloat posY = floorf(activeHeight*0.49f);
+    CGFloat posY = floorf(orientationFrame.size.height * 0.5f);
 
     CGFloat rotateAngle = 0.0;
     CGPoint newCenter = CGPointMake(posX, posY);
@@ -1289,8 +1289,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
         _hudView = [UIView new];
 #endif
         _hudView.layer.masksToBounds = YES;
-//        _hudView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
-        _hudView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        _hudView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
     }
     if(!_hudView.superview) {
         [self addSubview:_hudView];
