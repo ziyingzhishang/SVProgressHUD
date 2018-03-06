@@ -122,6 +122,7 @@ static float progress = 0.0f;
 }
 
 - (IBAction)showInfoWithStatus {
+//    [SVProgressHUD showImage:nil status: @"===="];
     [SVProgressHUD showInfoWithStatus:@"Useful Information."];
     self.activityCount++;
 }

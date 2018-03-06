@@ -312,7 +312,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 #endif
 }
 
-+ (void)showImage:(UIImage*)image status:(NSString*)status {
++ (void)showImage:(nullable UIImage*)image status:(NSString*)status {
     NSTimeInterval displayInterval = [self displayDurationForString:status];
     [[self sharedView] showImage:image status:status duration:displayInterval];
 }
@@ -877,8 +877,11 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
             }
 
             strongSelf.imageView.image = tintedImage;
-            strongSelf.imageView.hidden = NO;
-            
+            strongSelf.imageView.hidden = tintedImage == nil;
+            if (image == nil) {
+              strongSelf.imageView = nil;
+            }
+
             // Update text
             strongSelf.statusLabel.hidden = status.length == 0;
             strongSelf.statusLabel.text = status;
