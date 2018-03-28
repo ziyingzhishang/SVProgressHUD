@@ -12,7 +12,8 @@
 - (void)drawInContext:(CGContextRef)context {
     size_t locationsCount = 2;
     CGFloat locations[2] = {0.0f, 1.0f};
-    CGFloat colors[8] = {0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.75f};
+    CGFloat r = 60 / 255;
+    CGFloat colors[8] = {0.0f, 0.0f, 0.0f, 0.0f, r, r, r, 0.7f};
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace, colors, locations, locationsCount);
     CGColorSpaceRelease(colorSpace);
